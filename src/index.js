@@ -12,7 +12,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import ManageCatalogue from './components/ManageCatalogue';
 import Movies from './components/Movies';
-import Movie from './components/Movies';
+import Movie from './components/Movie';
 import ErrorPage from './ErrorPage';
 
 const router = createBrowserRouter([
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       {index: true, element: <Home />}, //default
       {
         path: '/movies',
+        element: <Movies />,
+      },
+      {
+        path: '/movies/:id',
         element: <Movie />,
       },
       {
