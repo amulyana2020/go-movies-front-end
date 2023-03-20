@@ -1,5 +1,5 @@
 import React from 'react';
-import {Outlet} from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 
 function App() {
   return (
@@ -11,12 +11,12 @@ function App() {
           </h1>
         </div>
         <div className='col text-end'>
-          <a
-            href='#!'
+          <Link
+            to='/login'
             className='btn btn-success mt-4'
           >
             <span>Login</span>
-          </a>
+          </Link>
         </div>
       </div>
       <hr className='mb-3' />
@@ -24,42 +24,42 @@ function App() {
         <div className='col-md-2'>
           <nav>
             <div className='list-group'>
-              <a
-                href='/'
+              <Link
+                to='/'
                 className='list-group-item list-group-item-action'
               >
                 Home
-              </a>
-              <a
-                href='/movies'
+              </Link>
+              <Link
+                to='/movies'
                 className='list-group-item list-group-item-action'
               >
                 Movies
-              </a>
-              <a
-                href='#!'
+              </Link>
+              <Link
+                to='/genres'
                 className='list-group-item list-group-item-action'
               >
                 Genres
-              </a>
-              <a
-                href='#!'
+              </Link>
+              <Link
+                to='/admin/movies/0'
                 className='list-group-item list-group-item-action'
               >
                 Add Movie
-              </a>
-              <a
-                href='#!'
+              </Link>
+              <Link
+                to='/manage-catalogue'
                 className='list-group-item list-group-item-action'
               >
-                Manage Catalog
-              </a>
-              <a
-                href='#!'
+                Manage Catalogue
+              </Link>
+              <Link
+                to='/graphql'
                 className='list-group-item list-group-item-action'
               >
                 Graphql
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

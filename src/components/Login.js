@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Movies = () => {
+const Login = () => {
   return (
     <>
       <div>
-        <h2>Movies</h2>
+        <h2>login</h2>
         <hr />
       </div>
     </>
   );
 };
 
-export default Movies;
+export default Login;
