@@ -1,6 +1,6 @@
 # Go Movies Front End
 
-This front end project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Learn React Front End.
 
 ## Available Scripts
 
