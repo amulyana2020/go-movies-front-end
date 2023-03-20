@@ -12,7 +12,7 @@ function App() {
         </div>
         <div className='col text-end'>
           <a
-            href='#'
+            href='#!'
             className='btn btn-success mt-4'
           >
             <span>Login</span>
@@ -25,37 +25,37 @@ function App() {
           <nav>
             <div className='list-group'>
               <a
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Home
               </a>
               <a
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Movies
               </a>
               <a
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Genres
               </a>
               <a
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Add Movie
               </a>
               <a
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Manage Catalog
               </a>
               <a
-                href='#'
+                href='#!'
                 className='list-group-item list-group-item-action'
               >
                 Graphql
