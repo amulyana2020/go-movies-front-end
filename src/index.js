@@ -5,11 +5,22 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import App from './App';
+import Home from './components/Home';
+import Movie from './components/Movies';
+import ErrorPage from './ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {index: true, element: <Home />}, //default
+      {
+        path: '/movies',
+        element: <Movie />,
+      },
+    ],
   },
 ]);
 

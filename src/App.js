@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './components/Home';
+import {Outlet} from 'react-router-dom';
 
 function App() {
   return (
@@ -25,13 +25,13 @@ function App() {
           <nav>
             <div className='list-group'>
               <a
-                href='#!'
+                href='/'
                 className='list-group-item list-group-item-action'
               >
                 Home
               </a>
               <a
-                href='#!'
+                href='/movies'
                 className='list-group-item list-group-item-action'
               >
                 Movies
@@ -64,7 +64,7 @@ function App() {
           </nav>
         </div>
         <div className='col-md-10'>
-          <Home />
+          <Outlet />
         </div>
       </div>
     </div>
