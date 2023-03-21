@@ -1,5 +1,9 @@
 import React, {useState} from 'react';
-import {Link, Outlet} from 'react-router-dom';
+import {
+  Link,
+  Outlet,
+  useNavigate,
+} from 'react-router-dom';
 import Alert from './Alert';
 
 function App() {
@@ -8,6 +12,13 @@ function App() {
     useState('');
   const [alertClassName, setAlertClassName] =
     useState('d-none');
+
+  const navigate = useNavigate();
+
+  const logOut = () => {
+    setJwtToken('');
+    navigate('/login');
+  };
 
   return (
     <div className='container'>
@@ -28,6 +39,7 @@ function App() {
           ) : (
             <a
               href='#!'
+              onClick={logOut}
               className='btn btn-danger mt-4'
             >
               Logout
