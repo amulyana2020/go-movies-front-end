@@ -20,7 +20,7 @@ const Movies = () => {
       `http://localhost:8080/movies`,
       requestOptions
     )
-      .then(response => response.json)
+      .then(response => response.json())
       .then(data => {
         setMovies(data);
       })
